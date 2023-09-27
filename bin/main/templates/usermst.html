@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link href="/css/style.css" rel="stylesheet" />
+<title>ユーザー 新規登録</title>
+</head>
+<body>
+  
+  <header>
+    <h1>EC Site -- 管理者ページ</h1>
+    <div>
+      <a href="/ecsite/admin/">管理者ページトップ</a>
+    </div>
+  </header>
+  
+  <div id="adminPage">
+    <h2>ユーザー　新規登録</h2>
+    <form name="addUserForm" id="addUserForm" method="post" action="/ecsite/admin/addUser">
+      <p>ユーザー名：<input type="text" name="userName" /></p>
+      <p>フルネーム：<input type="text" name="fullName" /></p>
+      <p>パスワード：<input type="password" name="password" /></p>
+      <button type="submit">登録</button>
+   <!--   <input type="hidden" name="userName" th:value="${userName}" />
+      <input type="hidden" name="password" th:value="${password}" /> -->
+    </form>
+  </div>
+
+</body>
+</html>
